@@ -345,10 +345,16 @@ a.linkedin {
     border-radius: 8px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 60%) {
     .tarinakuvat {
         flex-direction: column;
         align-items: center;
     }
 }
 
+@media (max-width: 80%) {
+    .storybox {
+        flex-direction: column;
+        justify-content: space-between ;
+    }
+}
