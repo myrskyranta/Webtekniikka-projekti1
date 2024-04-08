@@ -1,0 +1,353 @@
+/*Kotisivu*/
+body {
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    font-family: "Inter", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.motherbox {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    overflow: hidden;
+    max-height: 50px;
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.05);
+    height: 50px;
+    margin: 0;
+    padding: 0px 20px;
+    background-color: #EDBFA2;
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.verticalline {
+    border-left: 2px solid;
+    border-color: #3E393A;
+    margin-right: 80px;
+}
+
+a:link {
+    color: #111;
+}
+
+a:hover {
+    color: #a882dd;
+}
+
+a:visited {
+    color: #49416d;
+}
+
+.nimi {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    padding: 0;
+}
+
+.fa-paw {
+    margin-left: 10px;
+}
+
+.navbar-right>li>a.linkki {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    margin-right: 100px;
+    padding: 0;
+}
+
+
+.line {
+    display: flex;
+    height: 2px;
+    margin-top: 10px;
+    background-color: #49416D;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.infobox {
+    display: flex;
+    background-color: #3E393A;
+    height: 350px;
+    width: 420px;
+    padding: 4px;
+    border-radius: 8px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 150px;
+}
+
+.infotext {
+    color: white;
+    margin: 20px;
+    font-size: x-large;
+}
+
+
+.logo {
+    display: flex;
+    height: 350px;
+    width: 420px;
+
+}
+
+.logokuva {
+    border-radius: 8px;
+    border: 4px solid;
+    border-color: gray;
+}
+
+
+
+.pictureinfo {
+    display: flex;
+    background-color: #3E393A;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: white;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .pictures {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.kuva {
+    height: 400px;
+    width: 360px;
+    margin-right: 20px;
+    border-radius: 8px;
+    border: 4px solid;
+    border-color: gray;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    background-color: #EDBFA2;
+    padding: 1rem;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pageinfo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid;
+    border-radius: 8px;
+    text-align: center;
+    gap: 16px;
+    padding: 1rem;
+}
+
+.pageinfo-right {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.copyright {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+.fa-wrench {
+    margin: 5px;
+    font-size: 20px;
+}
+
+/* Footer ends here do not go below or Emmi will get very angy */
+
+/*Yhteydenotto-sivu*/
+
+.infoaboutcontacts {
+    display: flex;
+    margin: 40px 20%;
+    background-color: #3E393A;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.infotext2 {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+
+.contactbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .contactbox {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.contact {
+    display: flex;
+    margin-top: 40px;
+    padding: 10px;
+    width: 450px;
+    background-color: #3E393A;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.emmi {
+    height: 300px;
+    width: 220px;
+    align-self: center;
+    border: 2px solid;
+    border-radius: 8px;
+    border-color: #EDBFA2;
+}
+
+
+
+.emptypic {
+    height: 300px;
+    width: 220px;
+    align-self: center;
+    border: 2px solid;
+    border-radius: 8px;
+    border-color: #EDBFA2;
+}
+
+.fa-phone {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.phone {
+    font-size: 20px;
+    color: white;
+}
+
+.fa-envelope {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.email {
+    font-size: 20px;
+    color: white;
+}
+
+
+.fa-linkedin {
+    font-size: 30px;
+    margin-right: 10px;
+    color: white;
+}
+
+
+a.linkedin {
+    font-size: 20px;
+    color: white;
+}
+
+/*Tarina-sivu*/
+
+.storybox {
+    display: flex;
+    background-color: #3E393A;
+    flex-direction: column;
+    margin-top: 40px;
+    border-radius: 8px;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.storytitle {
+    color: white;
+    background-color: #49416D;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.storytext {
+    color: white;
+    margin: 10px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.tarinakuvat {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+    .tarinakuvat {
+        flex-direction: column;
+        align-items: center;
+    }
+}
