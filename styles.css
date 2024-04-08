@@ -335,6 +335,18 @@ a.linkedin {
     box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.05);
 }
 
+.storybox-middle {
+    display: flex;
+    background-color: #3E393A;
+    flex-direction: column;
+    margin-top: 40px;
+    border-radius: 8px;
+    justify-content: space-between;
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.05);
+    width: 60%;
+    max-width: 60%;
+}
+
 .storytitle1 {
     color: white;
     background-color: #49416D;
