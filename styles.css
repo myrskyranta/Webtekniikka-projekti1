@@ -8,7 +8,7 @@ body {
 
 .motherbox {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 75%;
 }
 
 .navbar {
@@ -236,12 +236,6 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 800px) {
-    .contactbox {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 
 .contact {
@@ -318,7 +312,6 @@ a.linkedin {
     margin-top: 40px;
     border-radius: 8px;
     justify-content: space-between;
-    gap: 16px;
 }
 
 .storytitle {
@@ -332,8 +325,7 @@ a.linkedin {
 
 .storytext {
     color: white;
-    margin: 10px;
-    text-align: center;
+    margin: 30px;
     font-size: x-large;
 }
 
@@ -345,16 +337,25 @@ a.linkedin {
     border-radius: 8px;
 }
 
-@media (max-width: 60%) {
+/*Tarina-sivun media queryt*/
+@media only screen and (max-width: 60%) {
     .tarinakuvat {
         flex-direction: column;
         align-items: center;
     }
 }
 
-@media (max-width: 80%) {
+@media only screen and(max-width: 80%) {
     .storybox {
         flex-direction: column;
         justify-content: space-between ;
+    }
+}
+
+/*Yhteydenotto-sivun media query */
+@media only screen and(max-width: 800px) {
+    .contactbox {
+        flex-direction: column;
+        align-items: center;
     }
 }
