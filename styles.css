@@ -338,6 +338,18 @@ a.linkedin {
 }
 
 /*Tarina-sivun media queryt*/
+
+
+@media only screen and(max-width: 80%) {
+    .storybox {
+        flex-direction: column;
+        justify-content: space-between ;
+    }
+    .contactbox {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media only screen and (max-width: 60%) {
     .tarinakuvat {
         flex-direction: column;
@@ -345,17 +357,4 @@ a.linkedin {
     }
 }
 
-@media only screen and(max-width: 80%) {
-    .storybox {
-        flex-direction: column;
-        justify-content: space-between ;
-    }
-}
 
-/*Yhteydenotto-sivun media query */
-@media only screen and(max-width: 800px) {
-    .contactbox {
-        flex-direction: column;
-        align-items: center;
-    }
-}
