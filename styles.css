@@ -23,21 +23,18 @@ body {
     height: 50px;
     margin: 0;
     padding: 0px 20px;
-    background-color: #EDBFA2;
+    background-color: #7d8cc4;
 }
 
 .navbar-left {
     display: flex;
     flex-direction: row;
     gap: 20px;
-
-
 }
 
 .navbar-right {
     display: flex;
     flex-direction: row;
-
 }
 
 .verticalline {
@@ -75,7 +72,6 @@ a:visited {
     padding: 0;
 }
 
-
 .line {
     display: flex;
     height: 2px;
@@ -89,7 +85,6 @@ a:visited {
     justify-content: center;
     align-items: center;
     padding: 50px;
-
 }
 
 .infobox {
@@ -111,21 +106,17 @@ a:visited {
     font-size: x-large;
 }
 
-
 .logo {
     display: flex;
     height: 350px;
     width: 420px;
-
 }
 
 .logokuva {
     border-radius: 8px;
-    border: 4px solid;
-    border-color: gray;
+    border: 2px solid;
+    border-color: #726da8;
 }
-
-
 
 .pictureinfo {
     display: flex;
@@ -153,6 +144,25 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .infobox {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .navbar-right>li>a.linkki {
+        font-size: large;
+        margin-right: 20px;
+    }
+
+    .verticalline {
+        margin-right: 20px;
+    }
 }
 
 .kuva {
@@ -160,15 +170,49 @@ h2 {
     width: 360px;
     margin-right: 20px;
     border-radius: 8px;
-    border: 4px solid;
-    border-color: gray;
+    border: 2px solid;
+    border-color: #726da8;
+}
+
+@media (max-width: 600px) {
+    .kuva {
+        height: 300px;
+        width: 260px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar-left {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar-right {
+        justify-content: center;
+    }
+
+    .nimi {
+        font-size: large;
+    }
+
+    .line {
+        margin: 10px 0;
+    }
+
+    .infotext {
+        font-size: large;
+    }
 }
 
 /* Footer */
-
 footer {
     display: flex;
-    background-color: #EDBFA2;
+    background-color: #7d8cc4;
     padding: 1rem;
     flex-direction: column;
     border-radius: 8px;
@@ -176,7 +220,6 @@ footer {
     text-align: center;
     align-items: center;
     justify-content: center;
-
 }
 
 .pageinfo {
@@ -196,22 +239,32 @@ footer {
     flex-direction: column;
 }
 
-
 .copyright {
     font-size: 13px;
     margin-top: 10px;
 }
-
 
 .fa-wrench {
     margin: 5px;
     font-size: 20px;
 }
 
-/* Footer ends here do not go below or Emmi will get very angy */
+@media (max-width: 400px) {
+    footer {
+        padding: 0.5rem;
+    }
+
+    .pageinfo {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}
 
 /*Yhteydenotto-sivu*/
-
 .infoaboutcontacts {
     display: flex;
     margin: 40px 20%;
@@ -221,11 +274,11 @@ footer {
 }
 
 .infotext2 {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     color: white;
+    padding: 4px;
 }
-
 
 .contactbox {
     display: flex;
@@ -236,7 +289,17 @@ footer {
     width: 100%;
 }
 
+@media (max-width: 800px) {
+    .infoaboutcontacts {
+        margin: 20px 10%;
+    }
 
+    .contactbox {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
 
 .contact {
     display: flex;
@@ -250,17 +313,7 @@ footer {
     border-radius: 8px;
 }
 
-.emmi {
-    height: 300px;
-    width: 220px;
-    align-self: center;
-    border: 2px solid;
-    border-radius: 8px;
-    border-color: #EDBFA2;
-}
-
-
-
+.emmi,
 .emptypic {
     height: 300px;
     width: 220px;
@@ -270,41 +323,37 @@ footer {
     border-color: #EDBFA2;
 }
 
-.fa-phone {
-    font-size: 20px;
-    margin-right: 10px;
+@media (max-width: 600px) {
+    .contact {
+        width: 100%;
+    }
+
+    .emmi,
+    .emptypic {
+        height: 200px;
+        width: 150px;
+    }
+
+    .infotext2 {
+        font-size: 20px;
+    }
 }
 
-.phone {
-    font-size: 20px;
-    color: white;
-}
-
-.fa-envelope {
-    font-size: 20px;
-    margin-right: 10px;
-}
-
-.email {
-    font-size: 20px;
-    color: white;
-}
-
-
+.fa-phone,
+.fa-envelope,
 .fa-linkedin {
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 10px;
-    color: white;
 }
 
-
+.phone,
+.email,
 a.linkedin {
     font-size: 20px;
     color: white;
 }
 
 /*Tarina-sivu*/
-
 .storybox {
     display: flex;
     background-color: #3E393A;
@@ -316,9 +365,10 @@ a.linkedin {
 
 .storytitle {
     color: white;
-    background-color: #49416D;
+    background-color: #726da8;
     border-radius: 8px;
-    margin: 10px;
+    padding: 4px;
+    margin: 20px;
     text-align: center;
     font-size: x-large;
 }
@@ -337,24 +387,16 @@ a.linkedin {
     border-radius: 8px;
 }
 
-/*Tarina-sivun media queryt*/
-
-
-@media only screen and(max-width: 80%) {
-    .storybox {
-        flex-direction: column;
-        justify-content: space-between ;
+@media (max-width: 800px) {
+    .storytitle {
+        font-size: large;
     }
-    .contactbox {
-        flex-direction: column;
-        align-items: center;
+
+    .storytext {
+        font-size: large;
     }
-}
-@media only screen and (max-width: 60%) {
+
     .tarinakuvat {
-        flex-direction: column;
-        align-items: center;
+        max-width: 80%;
     }
 }
-
-
